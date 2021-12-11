@@ -1,0 +1,27 @@
+spring:
+  main:
+    allow-circular-references: true
+  data:
+    cassandra:
+      keyspace-name: main
+      username: KEzOljNIZysogMiIhEOFZasq
+      password: sR-4i88Z5.882OG+tEK-QcKw0nn_afm6h1Jwv9KUDBsKqkqef+J6Iim9_zqT-irlxpSRLXkGFF7p9_JlTAie17pBQHBEUsYGbqRLqAy.XygNXigcohQLIcTN89ZXZfO-
+      schema-action: recreate
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 30s
+        init-query-timeout: 30s
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
+
+astra.db:
+    id: a8093ab0-a924-43aa-b6dd-94e9c482ce7e-1
+    region: us-east4
+    keyspace: main
+    application.token: AstraCS:KEzOljNIZysogMiIhEOFZasq:082ee0def839ccf538cb6359338d02bdd7835dcae7a11366097da0348346c3be
+
+datadump.location:
+    author: C:\NJ\Repository\spring-cassandra-tutorials\betterreads-webapp\test-authors.txt
+    works: C:\NJ\Repository\spring-cassandra-tutorials\betterreads-webapp\test-works.txt
